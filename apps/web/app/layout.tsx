@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/components/app/navbar";
+import { ScrollToTop } from "@/components/ui/scroll-to-top";
 import { JetBrains_Mono } from "next/font/google";
 
 const jetBrains = JetBrains_Mono({
@@ -33,8 +34,9 @@ export default function RootLayout({
   return (
     <html className="dark" lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${jetBrains.variable}`}>
-      <Navbar />
+        <Navbar />
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );

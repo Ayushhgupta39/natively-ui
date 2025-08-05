@@ -22,7 +22,8 @@
       { "title": "Dialog", "href": "/docs/components/dialog" },
       { "title": "Dropdown Menu", "href": "/docs/components/dropdown-menu" },
       { "title": "Drawer", "href": "/docs/components/drawer" },
-      { "title": "Collapsible", "href": "/docs/components/collapsible" }
+      { "title": "Collapsible", "href": "/docs/components/collapsible" },
+      { "title": "Scroll to Top", "href": "/docs/components/scroll-to-top" }
     ]
   }
 ]

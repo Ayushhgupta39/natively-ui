@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
-import { View, Text, ScrollView } from "react-native";
+import { View, Text } from "react-native";
+import { ScrollableLayout } from "@/components/layout/scrollable-layout";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 export default function ButtonDemo() {
   return (
-    <ScrollView className="flex-1 p-4">
+    <ScrollableLayout contentClassName="p-4">
       <Text className="text-xl font-bold mb-6">Button Component</Text>
 
       <Text className="text-lg font-semibold mb-2">Default</Text>
@@ -127,6 +128,6 @@ export default function ButtonDemo() {
       <View className="mb-4">
         <Button href="/components">Go to Home Page</Button>
       </View>
-    </ScrollView>
+    </ScrollableLayout>
   );
 }

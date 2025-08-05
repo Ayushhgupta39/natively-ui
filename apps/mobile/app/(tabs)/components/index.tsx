@@ -1,6 +1,7 @@
 import React from "react";
-import { View, Text, ScrollView, Pressable, Image } from "react-native";
+import { View, Text, Pressable } from "react-native";
 import { Href, Link } from "expo-router";
+import { ScrollableLayout } from "@/components/layout/scrollable-layout";
 
 interface ComponentType {
   name: string;
@@ -21,11 +22,12 @@ const components: ComponentType[] = [
   { name: "Dialog", path: "/pages/dialog-demo" },
   { name: "Drawer", path: "/pages/drawer-demo" },
   { name: "Dropdown Demo", path: "/pages/dropdown-menu-demo" },
+  { name: "Scroll to Top", path: "/pages/scroll-to-top-demo" },
 ];
 
 export default function ComponentsIndex() {
   return (
-    <ScrollView className="flex-1 p-4">
+    <ScrollableLayout contentClassName="p-4">
       <Text className="text-2xl font-bold mb-6">Components</Text>
 
       <View className="gap-4">
@@ -37,6 +39,6 @@ export default function ComponentsIndex() {
           </Link>
         ))}
       </View>
-    </ScrollView>
+    </ScrollableLayout>
   );
 }
